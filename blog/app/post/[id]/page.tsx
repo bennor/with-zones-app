@@ -1,5 +1,9 @@
 import Link from 'next/link';
 
+export function generateStaticParams() {
+  return [1, 2].map(String).map((id) => ({ id }));
+}
+
 export default async function Post({
   params
 }: {
