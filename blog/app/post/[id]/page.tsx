@@ -11,7 +11,8 @@ export default async function Post({
     <div>
       <h3>Post #{id}</h3>
       <p>Lorem ipsum</p>
-      <Link href="/blog">Back to blog</Link>
+      {/* This URL is scoped to the blog app, and will inherit its `basePath`. */}
+      <Link href="/">Back to blog</Link>
     </div>
   );
 }
