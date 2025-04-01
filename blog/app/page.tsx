@@ -1,10 +1,6 @@
 import Link from 'next/link';
-import Router from 'next/router';
 
 export default function Blog() {
-  // We'll use this later with images, if we need to.
-  const { basePath } = Router;
-
   return (
     <div>
       <h3>This is our blog</h3>
